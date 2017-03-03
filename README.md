@@ -1,2 +1,4 @@
-# DevTopicsInANutShell
-Original motivation is having a place to store a short-as-possible set of notes on Angular
+# Dev Topics In A NutShell
+
+[Angular V1](AngularV1.md)
+
