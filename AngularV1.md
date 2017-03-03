@@ -1,13 +1,13 @@
 #Angular V1
 
-[CodeSchool course on Angular V1](http://campus.codeschool.com/courses/shaping-up-with-angular-js)
-[PluralSight Angular Fundamentals Course](https://app.pluralsight.com/library/courses/angularjs-fundamentals/table-of-contents)
+* [CodeSchool course on Angular V1](http://campus.codeschool.com/courses/shaping-up-with-angular-js)
+* [PluralSight Angular Fundamentals Course](https://app.pluralsight.com/library/courses/angularjs-fundamentals/table-of-contents)
 
 ##Background
 
 ##Getting Angular V1
-*[Download angular.min.js](http://angularjs.org)
-*[Download bootstap.min.css](http://getbootstrap.com)
+* [Download angular.min.js](http://angularjs.org)
+* [Download bootstap.min.css](http://getbootstrap.com)
 
 ##Including Angular V1
 
@@ -45,7 +45,19 @@ Makes app more maintainable and testable.
 Use dependancy injections.
 
 ```javascript
-var app = angular.module('store', [])
+(function(){
+  var app = angular.module('store', [])
+  app.controller('StoreController', function(){
+    this.product = gem;
+  });
+
+  var gem = {
+  name: 'Dodecahedron',
+  price: 2.95,
+  description: '. . .'
+  }
+
+})();  
 ```
 
 ```html
